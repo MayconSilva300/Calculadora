@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAA
+        AAD///8AX1RK/0Q5Lf9EOS7/RTou/0c8MP9FOi7/RDku/0U6Lv9HPDD/RTou/0Q5Lv9EOS3/X1RK////
+        /wD///8A////AHZsZf++uLD/uLGp/764sP9yaWH/vriw/7ixqf++uLD/cmlh/764sP+4san/vriw/3Zs
+        Zf////8A////AP///wB3bWT/n5GE//////+fkYT/dGtj/5+RhP//////n5GE/3RrY/+fkYT//////5+R
+        hP93bWT/////AP///wD///8AeW9n/83Ctv/Fuq7/zMK2/3lvZ//Mwrb/xbqu/8zCtv95b2f/zMK2/8W6
+        rv/Nwrb/eW9n/////wD///8A////AH1zav+1r6f/r6ig/7Wup/+Cd23/ta6n/6+ooP+1rqf/gndt/7Wu
+        p/+vqKD/ta+n/31zav////8A////AP///wCAd23/nZCC//////+cj4L/iX10/5yPgv//////nI+C/4l9
+        dP+cj4L//////52Qgv+Ad23/////AP///wD///8Agndu/+LZ0P/a0cj/4tnQ/4yBdv/i2dD/2tHI/+LZ
+        0P+OgnT/6NvK/+LVwf/p3cv/g3ht/////wD///8A////AIZ7cf+zraX/raae/7KspP+Win3/sqyk/62m
+        nv+yrKT/nY54/z10//86cf//PnX//45/a/////8A////AP///wCKf3X/m46B//////+ajX//nZGG/5qN
+        f///////mo1//6aWf/8AFf///+D//wAX//+ThG7/////AP///wD///8AjIF2//nv6//36uj///Lw/6mW
+        j///8vD/+Ovp///y8P+rl43///fr//zv5P//9eb/j4J0/////wD///8A////AJaHf/9lg1f/ADIA/wA0
+        AP8ANgD/ADQA/wAzAP8ANAD/ADYA/wA0AP8AMgD/Z4VZ/5aHf/////8A////AP///wCgjIj/AFkA/wD/
+        //8A////AP///wD///8A////AP///wD///8A////AP///wBZAP+gjIj/////AP///wD///8Ao4+K/wBV
+        AP+q/r7/jf+n/1jsfP9I2Wv/NcZY/zfIWv83yFr/N8ha/zjQY/8AVwD/o4+K/////wD///8A////AKCP
+        iP98qnX/xfzc/6X7xv9t/6X/XfaU/0rjgf82z23/N9Bu/zfQbv8z0m3/g6x7/6CPiP////8A////AP//
+        /wChkIj/d8tz/wCRAP8AkgD/AJIA/wCTAP8AlAD/AJUA/wCVAP8AlQD/AJQA/3zNd/+hkIj/////AP//
+        /wD///8Ao5aK/6aUjf+tlZP/rpaU/66WlP+ulpT/rpaU/66WlP+ulpT/rpaU/62Vk/+mlI3/o5aK////
+        /wD///8AgAMAAIADAACAAwAAgAMAAIADAACAAwAAgAMAAIADAACAAwAAgAMAAIADAACAAwAAgAMAAIAD
+        AACAAwAAgAMAAA==
+</value>
+  </data>
 </root>

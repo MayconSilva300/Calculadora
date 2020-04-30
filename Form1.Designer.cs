@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
             this.blimpa = new System.Windows.Forms.Button();
             this.binverte = new System.Windows.Forms.Button();
             this.bdelete = new System.Windows.Forms.Button();
@@ -341,6 +342,7 @@
             this.Controls.Add(this.bdelete);
             this.Controls.Add(this.binverte);
             this.Controls.Add(this.blimpa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Calculadora";
             this.Text = "Calculadora";
