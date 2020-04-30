@@ -178,27 +178,20 @@ namespace Calculadora
         {
                 switch (numero2)
                 {
-                case 1:
-                        if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); };
+                case 1: if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); };
                         numero = 10; numero1 = 0; numero2 = 0; valor1 = 0; valor2 = 0; calculo = false;
                         calculo1 = false; historico.Text = ""; tela.Text = ""; cal = 0; comvirgula = false; break;
                 case 2:
-                        switch (numero1)
-                        {
-                            case 1: total = total + Convert.ToDouble(tela.Text); historico.Text = historico.Text + tela.Text; break;
+                    if (valor1 == 0) { }
+                    else{ switch (numero1)
+                        { case 1: total = total + Convert.ToDouble(tela.Text); historico.Text = historico.Text + tela.Text; break;
                             case 2: total = total - Convert.ToDouble(tela.Text); historico.Text = historico.Text + tela.Text; break;
                             case 3: total = total / Convert.ToDouble(tela.Text); historico.Text = historico.Text + tela.Text; break;
-                            case 4: total = total * Convert.ToDouble(tela.Text); historico.Text = historico.Text + tela.Text; break;
-                        }
-                        tela.Text = Convert.ToString(total); break;
-                case 3:
-                        if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); }
-                        else
-                        {
-                            int x = tela.Text.Length - 1;
-                            if (x >= 0) { tela.Text = tela.Text.Substring(0, x); }
-                        }
-                        break;
+                            case 4: total = total * Convert.ToDouble(tela.Text); historico.Text = historico.Text + tela.Text; break; }
+                        tela.Text = Convert.ToString(total); valor1 = 0; } break;
+                case 3: if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); }
+                        else { int x = tela.Text.Length - 1;
+                        if (x >= 0) { tela.Text = tela.Text.Substring(0, x); } } break;
                 case 4:
                         double invert = 0;
                         invert = Convert.ToDouble(tela.Text) * -1;
