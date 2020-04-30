@@ -26,6 +26,7 @@ namespace Calculadora
         double total = 0;
         bool calculo = false;
         bool calculo1 = false;
+        bool comvirgula = false;
 
         private void NUMEROS()
         {
@@ -180,7 +181,7 @@ namespace Calculadora
                 case 1:
                         if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); };
                         numero = 10; numero1 = 0; numero2 = 0; valor1 = 0; valor2 = 0; calculo = false;
-                        calculo1 = false; historico.Text = ""; tela.Text = ""; cal = 0; break;
+                        calculo1 = false; historico.Text = ""; tela.Text = ""; cal = 0; comvirgula = false; break;
                 case 2:
                         switch (numero1)
                         {
@@ -202,14 +203,15 @@ namespace Calculadora
                         double invert = 0;
                         invert = Convert.ToDouble(tela.Text) * -1;
                         tela.Text = Convert.ToString(invert); break;
-                case 5: tela.Text = tela.Text + ","; break;
+                case 5: if (comvirgula == false) { tela.Text = tela.Text + ","; comvirgula  = true; }
+                    else{ } break;
                 }
             historico.Focus();
         }
 
         private void binverte_Click(object sender, EventArgs e)
         {
-            if (numero2 == 2) { tela.Text = ""; historico.Text = ""; }
+            if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); historico.Focus(); }
             else if (tela.Text == "") { }
             else { numero2 = 4; FUNCIONALIDADES(); }
             historico.Focus();
@@ -222,7 +224,7 @@ namespace Calculadora
 
         private void bdelete_Click(object sender, EventArgs e)
         {
-            if (numero2 == 2) { tela.Text = ""; historico.Text = ""; }
+            if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); historico.Focus(); }
             else if (tela.Text == "") { }
             else
             {
@@ -233,7 +235,7 @@ namespace Calculadora
 
         private void bvirgula_Click(object sender, EventArgs e)
         {
-            if (numero2 == 2) { tela.Text = ""; historico.Text = ""; }
+            if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); historico.Focus(); }
             else if (tela.Text == "") { }
             else { numero2 = 5; FUNCIONALIDADES(); }
             historico.Focus();
@@ -281,22 +283,22 @@ namespace Calculadora
                 switch (e.KeyValue)
                 {
                     case 8:
-                        if (numero2 == 2) { tela.Text = ""; historico.Text = ""; }
+                        if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); historico.Focus(); }
                         else if (tela.Text == "") { }
                         else { numero2 = 3; FUNCIONALIDADES(); } break;
                     case 13: if (tela.Text == "") { }
                         else { numero2 = 2; FUNCIONALIDADES(); historico.Focus(); } break;
                     case 27: numero2 = 1; FUNCIONALIDADES(); break;
                     case 46: numero2 = 1; FUNCIONALIDADES(); break;
-                    case 110: if (numero2 == 2) { tela.Text = ""; historico.Text = ""; }
+                    case 110: if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); historico.Focus(); }
                         else if (tela.Text == "") { }
                         else { numero2 = 5; FUNCIONALIDADES(); } break;
-                    case 187:if (tela.Text == "") { }
+                    case 187: if (tela.Text == "") { }
                         else { numero2 = 2; FUNCIONALIDADES(); historico.Focus(); } break;
-                    case 188: if (numero2 == 2) { tela.Text = ""; historico.Text = ""; }
+                    case 188: if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); historico.Focus(); }
                         else if (tela.Text == "") { }
                         else { numero2 = 5; FUNCIONALIDADES(); } break;
-                    case 194: if (numero2 == 2) { tela.Text = ""; historico.Text = ""; }
+                    case 194: if (numero2 == 2) { numero2 = 1; FUNCIONALIDADES(); historico.Focus(); }
                         else if (tela.Text == "") { }
                         else { numero2 = 4; FUNCIONALIDADES(); } break;
                 }
